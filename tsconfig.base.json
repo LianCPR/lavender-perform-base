@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@lavender/shared": [
+        "./packages/shared/src/index.ts"
+      ],
+      "@lavender/design-system": [
+        "./packages/design-system/src/index.ts"
+      ],
+      "@lavender/ui": [
+        "./packages/ui/src/index.ts"
+      ],
+      "@lavender/music-player": [
+        "./packages/music-player/src/index.ts"
+      ],
+      "@lavender/music-library": [
+        "./packages/music-library/src/index.ts"
+      ],
+      "@lavender/playlists": [
+        "./packages/playlists/src/index.ts"
+      ],
+      "@lavender/backend": [
+        "./packages/backend/src/index.ts"
+      ],
+      "@lavender/music-providers": [
+        "./packages/music-providers/src/index.ts"
+      ],
+      "@lavender/personalization": [
+        "./packages/personalization/src/index.ts"
+      ]
+    }
+  }
+}

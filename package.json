@@ -1,0 +1,38 @@
+{
+  "name": "lavender-music",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lavender Music — a personal music streaming and library application.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @lavender/web",
+    "dev:web": "npm run dev --workspace @lavender/web",
+    "dev:mobile": "npm run dev --workspace @lavender/mobile",
+    "ios": "npm run ios --workspace @lavender/mobile",
+    "android": "npm run android --workspace @lavender/mobile",
+    "build:web": "npm run build --workspace @lavender/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "qa": "npm run typecheck && npm run lint",
+    "test": "npm run test --workspaces --if-present",
+    "test:db": "bash scripts/db-verify.sh",
+    "seed:catalog": "node --experimental-strip-types scripts/generate-catalog-seed.mjs",
+    "test:sync": "npm run test --workspace @lavender/backend"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.5",
+    "@types/react": "~19.3.0",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@lavender/music-player",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lavender/shared": "*",
+    "expo-audio": "~58.0.12"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0"
+  }
+}

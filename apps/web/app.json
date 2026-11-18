@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Lavender Music",
+    "slug": "lavender-music-web",
+    "version": "0.1.0",
+    "scheme": "lavendermusic",
+    "userInterfaceStyle": "automatic",
+    "platforms": [
+      "web"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "phase": "06-audio-engine"
+    }
+  }
+}

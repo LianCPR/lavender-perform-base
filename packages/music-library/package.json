@@ -1,0 +1,19 @@
+{
+  "name": "@lavender/music-library",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lavender/personalization": "*",
+    "@lavender/playlists": "*",
+    "@lavender/shared": "*"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0"
+  }
+}
